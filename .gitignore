@@ -43,3 +43,6 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+
+# Readmes because I do not like writing readmes here theyre disgusting
+README.md
