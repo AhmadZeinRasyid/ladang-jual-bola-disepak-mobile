@@ -1,16 +1,7 @@
-# ladang_jual_bola_disepak_mobile
-
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Tugas 7
+1. Widget tree adalah sistem hierarki dari widget yg berada di flutter. Semua widget memiliki common ancestor root pada hierarki mereka, dan layaknya html, context pada parent widget akan di turunkan kepada child.
+2. Disini sudah mengimplementasikan widget untuk aplikasinya Scaffold, MaterialApp, Padding, Center, Text, GridView, dan custom StatelessWidgets. Scaffold berguna untuk menentukan bentuk dan struktur suatu halaman. Padding dan center berguna untuk menempatkan widget child-nya pada posisi tertentu; padding tentunya untuk memberikan jarak dengan widget lain; dan center untuk menempatkan childnya pada tengah layar. Text self-explanatory. Stateless widgets disini adalah class yang meng-extend StatelessWidgets dan memiliki fitur yang kita implementasi sendiri.
+3. MaterialApp digunakan karna kompleksitas dan banyak solusinya untuk berbagai masalah seperti penyediaan tema, level routing, titel aplikasi, dan lain.
+4. Stateless Widget bersifat statik dan tidak akan di bangun kembali ketika user berinteraksi dengannya. Sementara itu, stateful widget akan berubah-ubah terus pengguna berinteraksi dengannya. Alhasil, pemanggilan dan pembuatan stateful widget berbeda dengan stateless widget. Kita menggunakan stateless widget untuk komponen aplikasi yang tidak akan berubah, dan sebaliknya.
+5. BuildContext adalah class helper yang memiliki method2 statik untuk membantu pembuatan hierarki widget. Ketika kita menjalankan fungsi StatelessWidget.build atau State.build, BuildContext menjadi parent dari widget return dari pemanggilan fungsi tersebut. 
+6. Hot reload tidak membunuh aplikasi yang sedang berjalan, namun meng-update/apply perubahan dari kode yang kita tulis langsung pada aplikasi tanpa merusak konteks/state yang sebelumnya. Perbedaannya dengan hot restart adalah di bagian membunuh aplikasi. Hot restart mengkompilasi ulang semua kode dan aplikasi mulai dengan state default, sementara hot reload tidak dan hanya meng-apply perubahan langsung.
